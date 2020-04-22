@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Find the View that shows the Home Page
         ImageView homePage = (ImageView) findViewById(R.id.home);
-
+        // this is change
         // Set a click listener on that View
         homePage.setOnClickListener(new View.OnClickListener() {
 
