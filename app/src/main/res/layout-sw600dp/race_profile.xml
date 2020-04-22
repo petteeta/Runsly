@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="always">
+
+
+        <ImageView
+            android:id="@+id/profile_header"
+            android:layout_width="936dp"
+            android:layout_height="205dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/road_race_profile_header" />
+
+        <ImageView
+            android:id="@+id/road_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.685"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.16"
+            app:srcCompat="@drawable/road_logo" />
+
+        <TextView
+            android:id="@+id/race_name"
+            android:layout_width="257dp"
+            android:layout_height="73dp"
+            android:layout_marginTop="104dp"
+            android:text="St. George Half Marathon"
+            android:textColor="@color/colorWhite"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.377"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/race_date"
+            android:layout_width="64dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="139dp"
+            android:layout_marginRight="139dp"
+            android:text="Jan 14"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/road_icon"
+            app:layout_constraintHorizontal_bias="0.88"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_header" />
+
+        <TextView
+            android:id="@+id/race_location"
+            android:layout_width="157dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="24dp"
+            android:text="St. George, UT"
+            android:textColor="@color/color_gray"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/race_date"
+            app:layout_constraintTop_toBottomOf="@+id/profile_header" />
+
+        <TextView
+            android:id="@+id/races_offered"
+            android:layout_width="155dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="208dp"
+            android:layout_marginLeft="208dp"
+            android:layout_marginTop="8dp"
+            android:text="Available Races"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/race_date" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="208dp"
+            android:layout_marginLeft="208dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:srcCompat="@drawable/director_organizer" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="200dp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            app:srcCompat="@drawable/race_narrative" />
+
+        <ImageButton
+            android:id="@+id/add_race_plan_button"
+            android:layout_width="292dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="236dp"
+            android:layout_marginLeft="236dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2"
+            app:srcCompat="@drawable/add_to_race_plan" />
+
+        <ImageView
+            android:id="@+id/countdown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="200dp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add_race_plan_button"
+            app:srcCompat="@drawable/countdown" />
+
+        <ImageView
+            android:id="@+id/more_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="200dp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/countdown"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/more_info" />
+
+        <ImageButton
+            android:id="@+id/race_website"
+            android:layout_width="308dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="64dp"
+            android:overScrollMode="never"
+            app:layout_constraintStart_toStartOf="@+id/more_info"
+            app:layout_constraintTop_toTopOf="@+id/more_info"
+            app:srcCompat="@drawable/race_website" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

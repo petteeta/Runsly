@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never">
+
+
+        <ImageView
+            android:id="@+id/profile_header"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/road_race_profile_header" />
+
+        <ImageView
+            android:id="@+id/road_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.802"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.132"
+            app:srcCompat="@drawable/road_logo" />
+
+        <TextView
+            android:id="@+id/month"
+            android:layout_width="55dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="40dp"
+            android:text="Month"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_header" />
+
+        <TextView
+            android:id="@+id/day_in_month"
+            android:layout_width="34dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="40dp"
+            android:text="Day"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/month"
+            app:layout_constraintTop_toBottomOf="@+id/profile_header" />
+
+        <TextView
+            android:id="@+id/race_name"
+            android:layout_width="323dp"
+            android:layout_height="78dp"
+            android:layout_marginTop="84dp"
+            android:text="Race Name"
+            android:textColor="@color/colorWhite"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.42"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/city_and_state"
+            android:layout_width="213dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:text="Race City, State"
+            android:textColor="#6B6868"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/day_in_month"
+            app:layout_constraintTop_toBottomOf="@+id/profile_header" />
+
+        <TextView
+            android:id="@+id/races_offered"
+            android:layout_width="301dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:text="Races Offered"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/month" />
+
+        <TextView
+            android:id="@+id/synopsis"
+            android:layout_width="297dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="32dp"
+            android:gravity="center"
+            android:text="Synopsis"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/races_offered" />
+
+        <ImageButton
+            android:id="@+id/add_race_plan_button"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="70dp"
+            android:layout_marginRight="70dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/synopsis"
+            app:srcCompat="@drawable/add_to_race_plan" />
+
+        <ImageView
+            android:id="@+id/countdown"
+            android:layout_width="259dp"
+            android:layout_height="183dp"
+            android:layout_marginStart="64dp"
+            android:layout_marginLeft="64dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginRight="64dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add_race_plan_button"
+            app:srcCompat="@drawable/countdown" />
+
+        <ImageView
+            android:id="@+id/more_info"
+            android:layout_width="261dp"
+            android:layout_height="146dp"
+            android:layout_marginStart="64dp"
+            android:layout_marginLeft="64dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="66dp"
+            android:layout_marginRight="66dp"
+            android:layout_marginBottom="80dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.387"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/countdown"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/more_info" />
+
+        <ImageButton
+            android:id="@+id/race_website"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="88dp"
+            android:overScrollMode="never"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/more_info"
+            app:srcCompat="@drawable/race_website" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>
