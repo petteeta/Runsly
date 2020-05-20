@@ -35,8 +35,8 @@ public class MainActivity extends AppCompatActivity {
         memberLoginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent chooseIntent = new Intent(MainActivity.this, ChooseRaceTypeActivity.class);
-                startActivity(chooseIntent);
+                Intent loginIntent = new Intent(MainActivity.this, MemberLoginActivity.class);
+                startActivity(loginIntent);
             }
         });
 

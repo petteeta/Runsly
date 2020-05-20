@@ -22,7 +22,6 @@
         </activity>
 
 
-
         <activity
             android:name=".ChooseRaceTypeActivity"
             android:parentActivityName=".MainActivity">
@@ -41,7 +40,6 @@
         </activity>
 
 
-
         <activity
             android:name=".ObstacleRaceActivity"
             android:parentActivityName=".ChooseRaceTypeActivity">
@@ -54,8 +52,10 @@
         </activity>
 
 
-
-
+        <activity
+            android:name=".MemberLoginActivity"
+            android:parentActivityName=".MainActivity">
+        </activity>
 
 
     </application>
